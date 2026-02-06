@@ -198,7 +198,6 @@ const selectedRow = ref<TableRow | null>(null)
 const showDetail = ref(false)
 const isEditing = ref(false)
 const detailTableData = ref<DetailRow[]>([])
-let originalDetailData: string = ''
 
 const tableData = ref<TableRow[]>([
   { unitProject: '上库工程山水库', bimCode: '02001-0202-01-01001-01010001', status: '通过', statusType: 'success' },
@@ -272,7 +271,6 @@ const handleCollapse = () => {
  */
 const handleEdit = () => {
   isEditing.value = true
-  originalDetailData = JSON.stringify(detailTableData.value)
 }
 
 /**
@@ -297,7 +295,9 @@ const handleConfirm = () => {
     
     // 更新 bimCode 数据
     const d = detailTableData.value[0]
-    selectedRow.value.bimCode = `${d.projectCode}-${d.categoryCode}-${d.unitCode}-${d.subCode}-${d.itemCode}`
+    if (d) {
+      selectedRow.value.bimCode = `${d.projectCode}-${d.categoryCode}-${d.unitCode}-${d.subCode}-${d.itemCode}`
+    }
     
     ElMessage.success('保存成功，检查结果已变更为人工确认')
     isEditing.value = false

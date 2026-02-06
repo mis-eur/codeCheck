@@ -41,17 +41,6 @@ const getBreadcrumb = () => {
 }
 
 /**
- * 判断是否为首页
- */
-const isDashboard = (route: RouteLocationMatched) => {
-  const name = route && (route.name as string)
-  if (!name) {
-    return false
-  }
-  return name.trim().toLocaleLowerCase() === 'Dashboard'.toLocaleLowerCase()
-}
-
-/**
  * 处理跳转
  */
 const handleLink = (item: RouteLocationMatched) => {

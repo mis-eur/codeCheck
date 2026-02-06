@@ -1,36 +1,208 @@
       {
-        "domainEntities": [
+        "domains": [
           {
-            "name": "水电工程项目11划分编码",
-            "code": "02001",
-            "children": [
-              {
-                "name": "工程类别码",
-                "code": "0102",
-                "children": [
-                  {
-                    "name": "单位工程码",
-                    "code": "010201"
-                  }
-                ]
-              }
-            ]
+            "id": "2a716085-9d8d-458a-8bec-217d232cf68c",
+            "name": "水电工程项目划分编码",
+            "value": 0
+          }
+        ],
+        "domainEntities": {
+          "name": "水电工程项目划分编码",
+          "list": [
+            {
+              "id": "49b8fefa-41b2-4550-b9ff-a30a4672fe40",
+              "code": "02001",
+              "name": "",
+              "displayName": "项目工程码",
+              "dataMapping": "IfcProjectionElement",
+              "rvtSymbol": "公司码|单位码(三位)+顺序码(二位)",
+              "relationship": "",
+              "relationshipExistence": "",
+              "relationshipCode": "",
+              "sizePrecision": null,
+              "shapePrecision": "",
+              "positionPrecision": "",
+              "lodLevel": null,
+              "red": null,
+              "green": null,
+              "blue": null,
+              "hex": "",
+              "parent": null,
+              "majorName": "水电工程项目划分编码",
+              "props": [],
+              "propSets": []
+            },
+            {
+              "id": "af9e9441-69fc-444f-aaf9-55dce4723ca3",
+              "code": "02001-0102",
+              "name": "",
+              "displayName": "上库工程/水泥混凝土库盆",
+              "dataMapping": "IfcProjectionElement",
+              "rvtSymbol": "工程类别码|工程大类码（二位）+工程小类码（二位））",
+              "relationship": "",
+              "relationshipExistence": "",
+              "relationshipCode": "",
+              "sizePrecision": null,
+              "shapePrecision": "",
+              "positionPrecision": "",
+              "lodLevel": null,
+              "red": null,
+              "green": null,
+              "blue": null,
+              "hex": "",
+              "parent": "49b8fefa-41b2-4550-b9ff-a30a4672fe40",
+              "majorName": "水电工程项目划分编码",
+              "props": [],
+              "propSets": []
+            },
+            {
+              "id": "97d73235-53cc-4f80-bebf-6412929bb763",
+              "code": "02001-0102-01",
+              "name": "",
+              "displayName": "上库工程上水库",
+              "dataMapping": "IfcProjectionElement",
+              "rvtSymbol": "单位工程码（二位）",
+              "relationship": "",
+              "relationshipExistence": "",
+              "relationshipCode": "",
+              "sizePrecision": null,
+              "shapePrecision": "",
+              "positionPrecision": "",
+              "lodLevel": null,
+              "red": null,
+              "green": null,
+              "blue": null,
+              "hex": "",
+              "parent": "af9e9441-69fc-444f-aaf9-55dce4723ca3",
+              "majorName": "水电工程项目划分编码",
+              "props": [],
+              "propSets": []
+            },
+            {
+              "id": "5fb093c9-c90e-46ab-84ed-8d341ef2e0e6",
+              "code": "02001-0102-01-02001",
+              "name": "",
+              "displayName": "库盆工程/1#填筑体",
+              "dataMapping": "IfcProjectionElement",
+              "rvtSymbol": "分部工程码|类别（二位）+顺序码（三位）",
+              "relationship": "",
+              "relationshipExistence": "",
+              "relationshipCode": "",
+              "sizePrecision": null,
+              "shapePrecision": "",
+              "positionPrecision": "",
+              "lodLevel": null,
+              "red": null,
+              "green": null,
+              "blue": null,
+              "hex": "",
+              "parent": "97d73235-53cc-4f80-bebf-6412929bb763",
+              "majorName": "水电工程项目划分编码",
+              "props": [],
+              "propSets": []
+            },
+            {
+              "id": "65844443-42f8-47aa-8ac2-4ae94baf783a",
+              "code": "02001-0102-01-02001-01010001",
+              "name": "",
+              "displayName": "大坝工程/土质地基开挖/库底回填及铺盖料",
+              "dataMapping": "IfcProjectionElement",
+              "rvtSymbol": "单元/分项工程码|分项工程大类码（二位）+分项工程小类码（二位）+工程码（二位）+顺序码（二位）",
+              "relationship": "",
+              "relationshipExistence": "",
+              "relationshipCode": "",
+              "sizePrecision": null,
+              "shapePrecision": "",
+              "positionPrecision": "",
+              "lodLevel": null,
+              "red": null,
+              "green": null,
+              "blue": null,
+              "hex": "",
+              "parent": "5fb093c9-c90e-46ab-84ed-8d341ef2e0e6",
+              "majorName": "水电工程项目划分编码",
+              "props": [],
+              "propSets": []
+            }
+          ]
+        },
+        "enums": [],
+        "valueTypes": [
+          {
+            "id": "366526d0-05e5-4036-b325-ed780dc83676",
+            "name": "IfcAmountOfSubstanceMeasure",
+            "value": 1
           },
           {
-            "name": "水电工程项目12划分编码",
-            "code": "02002",
-            "children": [
-              {
-                "name": "工程类别码",
-                "code": "0102",
-                "children": [
-                  {
-                    "name": "单位工程码",
-                    "code": "010201"
-                  }
-                ]
-              }
-            ]
+            "id": "cbd13b42-9d9e-4b63-ad75-75983b9f7a63",
+            "name": "IfcBoolean",
+            "value": 2
+          },
+          {
+            "id": "30bba356-6576-4550-81e1-31303a26410f",
+            "name": "IfcDate",
+            "value": 3
+          },
+          {
+            "id": "38ff67db-ce04-4249-ad23-3f2de9b7583b",
+            "name": "IfcDuration",
+            "value": 4
+          },
+          {
+            "id": "ef5f2d0b-1eda-4c4a-b38a-e55bf74f6c1c",
+            "name": "IfcIdentifier",
+            "value": 5
+          },
+          {
+            "id": "31d720e3-6699-40b1-a49c-50bba5f161c0",
+            "name": "IfcInteger",
+            "value": 6
+          },
+          {
+            "id": "699b26f4-3bd7-42e0-9e1a-807f7e54b936",
+            "name": "IfcLabel",
+            "value": 7
+          },
+          {
+            "id": "7a272ffd-a3c5-46ab-a272-5bf3da9d90f1",
+            "name": "IfcLengthMeasure",
+            "value": 8
+          },
+          {
+            "id": "c26fd0d1-5819-4465-b525-bafdafa6145b",
+            "name": "IfcLogical",
+            "value": 9
+          },
+          {
+            "id": "208c1e0e-6d02-4f83-bcdf-1fb321aaf6ab",
+            "name": "IfcMonetaryMeasure",
+            "value": 10
+          },
+          {
+            "id": "cffc54f9-323a-4d19-bb7a-062a94d5b66b",
+            "name": "IfcPositiveLengthMeasure",
+            "value": 11
+          },
+          {
+            "id": "db7dcbfe-d524-4e8f-9c6e-75be307c250c",
+            "name": "IfcReal",
+            "value": 12
+          },
+          {
+            "id": "d9bb001e-c2b3-4623-98eb-11cf0eaa847a",
+            "name": "IfcText",
+            "value": 13
+          },
+          {
+            "id": "a0bf36ae-fc4f-4514-a1f5-5c6ee7ad1530",
+            "name": "IfcTimeMeasure",
+            "value": 14
+          },
+          {
+            "id": "c7100e9c-c18e-41aa-9a66-622fe1fb3297",
+            "name": "枚举",
+            "value": 15
           }
-        ]
+        ],
+        "specials": []
       }

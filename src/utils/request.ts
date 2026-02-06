@@ -44,7 +44,7 @@ service.interceptors.request.use(
  */
 service.interceptors.response.use(
   (response: AxiosResponse) => {
-    const { code, message, data } = response.data;
+    const { code, message } = response.data;
     
     // 根据业务代码判断请求是否成功
     if (code === 200 || code === 0) {

@@ -43,9 +43,9 @@ const appStore = useAppStore()
  */
 const syncActiveMenu = () => {
   const matched = route.matched
-  if (matched.length > 0) {
+  if (matched && matched.length > 0) {
     // 找到当前路由所属的一级根路径
-    const rootPath = matched[0].path || '/'
+    const rootPath = matched[0]?.path || '/'
     appStore.setActiveHeaderPath(rootPath)
   }
 }
